@@ -1,9 +1,12 @@
+const yearSpan = document.getElementById('current-year')
+yearSpan.innerText = new Date().getFullYear()
+
 class Cat {
-  constructor(_name, _description, _brand, _imgUrl, _price) {
+  constructor(_name, _description, _brand, _imageUrl, _price) {
     this.name = _name
     this.description = _description
     this.brand = _brand
-    this.imgUrl = _imgUrl
+    this.imageUrl = _imageUrl
     this.price = _price
   }
 }

@@ -1,3 +1,6 @@
+const yearSpan = document.getElementById('current-year')
+yearSpan.innerText = new Date().getFullYear()
+
 const API_KEY =
   'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NzM3MWVjYzhhZDEyOTAwMTU4NzZjNjIiLCJpYXQiOjE3MzE2NjU2MTIsImV4cCI6MTczMjg3NTIxMn0.qGqcnKf754jM8oUe_jpe1P_je3orsCKS8pMbR9kxdZs'
 
@@ -31,8 +34,8 @@ fetch(link + catsId, {
             <div class="card-body">
                 <h5 class="card-title">${singleCat.name}</h5>
                 <p class="card-text">${singleCat.description}</p>
-                <p class="card-text">${singleCat.brand}€</p>
-                <p class="card-text">${singleCat.imageUrl}€</p>
+                <p class="card-text">${singleCat.brand}</p>
+                <p class="card-text">${singleCat.imageUrl}</p>
                 <p class="card-text">${singleCat.price}€</p>
                 <a class="btn btn-warning" href="./backoffice.html?catsId=${catsId}">MODIFICA</a>
                 <button class="btn btn-danger" id="delete-btn">ELIMINA</button>
